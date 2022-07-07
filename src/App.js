@@ -16,8 +16,14 @@ export default function App() {
         <Link to="/page2">Page1</Link>
       </div>
       <Switch>
-        <Route parh="/page1">
+        <Route exact parh="/">
+          <Home />
+        </Route>
+        <Route exact parh="/page1">
           <Page1 />
+        </Route>
+        <Route exact parh="/page2">
+          <Page2 />
         </Route>
       </Switch>
     </BrowserRouter>
